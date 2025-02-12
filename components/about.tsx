@@ -19,31 +19,31 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+          I’m an engineering student at{" "}
+          <span className="font-medium">IIIT Allahabad</span>, pursuing a degree in{" "}
+          <span className="font-medium">Electronics and Communication Engineering (ECE)</span>. 
+          I am passionate about <span className="font-medium">software engineering</span> 
+          and highly focused on <span className="font-medium">Data Structures & Algorithms (DSA)</span>. 
+          I am also actively learning <span className="font-medium">full-stack web development</span>. 
+        </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
+        <p className="mb-3">
+          <span className="italic">With over two years of experience</span> in{" "}
+          <span className="font-medium">UI/UX design and graphic design</span>, 
+          I have developed a strong sense of aesthetics and user-friendly design. 
+          My core stack is{" "}
+          <span className="font-medium">React, Node.js, and MongoDB</span>.{" "}
+          I am currently looking for a{" "}
+          <span className="font-medium">full-time position</span> as a software developer.
+        </p>
+
+        <p>
+          <span className="italic">When I'm not coding</span>, I enjoy spending time with 
+          <span className="font-medium"> friends and family</span>, watching movies, and 
+          exploring my creativity through <span className="font-medium">artwork, design, and painting</span>. 
+</p>
+
+
     </motion.section>
   );
 }
