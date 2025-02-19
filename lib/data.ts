@@ -43,7 +43,7 @@ export const experiencesData = [
     company: "Wemofy",
     location: "Remote, India",
     description:
-      "Completed a 2-month UI/UX design internship, crafting a SaaS website for app design and a mobile app for efficient note-taking.",
+      "Completed a 3-month UI/UX design internship, crafting a SaaS website for app design and a mobile app for efficient note-taking.",
       icon: React.createElement(CgWorkAlt),
     date: "April - June 2024",
   },
