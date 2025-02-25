@@ -70,24 +70,31 @@ export const projectsData = [
     title: "SyncSoc",
     description:
       "Built SyncSoc for IIITA societies, streamlining event management and volunteer recruitment while boosting participation and efficiency.",
-    tags: ["React", "MongoDB", "Tailwind", "Node.js","Redux","Figma"],
+    tags: ["React", "MongoDB", "Tailwind", "Node.js", "Redux", "Figma"],
     imageUrl: syncsoc,
+    githubLink: "https://github.com/AyushmanSoni/SyncSoc", // Replace with actual link
+    liveLink: "https://curious-bunny-3bacff.netlify.app/", // Replace with actual link
   },
   {
-    title: "HostelHub.",
+    title: "HostelHub",
     description:
-      "Developed a hostel room allocation system optimizing assignments with user preferences, featuring secure authentication and efficient data management.",
-    tags: ["React", "MongoDB", "Tailwind" , "Node.js","Figma"],
+      "Hostel room allocation system optimizing assignments with user preferences, featuring secure authentication and efficient data management.",
+    tags: ["React", "MongoDB", "Tailwind", "Node.js", "Figma"],
     imageUrl: hostel2,
+    githubLink: "https://github.com/AyushmanSoni/HostelHub-Frontend", // Replace with actual link
+    liveLink: "", // Replace with actual link
   },
   {
     title: "ChapterVerse",
     description:
       "Built a full-stack online bookstore, allowing admins to manage books and users to track orders, save favorites, and manage their cart seamlessly.",
-    tags: ["React", "MongoDB", "Tailwind", "Node.js","Figma"],
+    tags: ["React", "MongoDB", "Tailwind", "Node.js", "Figma"],
     imageUrl: chapterverse2,
+    githubLink: "https://github.com/AyushmanSoni/Chapterverse", // Replace with actual link
+    liveLink: "https://joyful-pony-a97d9a.netlify.app/", // Replace with actual link
   },
 ] as const;
+
 
 export const skillsData = [
   "HTML",
