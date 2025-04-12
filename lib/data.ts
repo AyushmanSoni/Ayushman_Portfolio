@@ -10,6 +10,7 @@ import chapterverse2 from "@/public/chapterverse.jpeg"
 import hostel from "@/public/hostel.jpeg"
 import hostel2 from "@/public/hostelhub.jpeg"
 import syncsoc from "@/public/main.png"
+import gan from "@/public/gan.png"
 export const links = [
   {
     name: "Home",
@@ -76,12 +77,12 @@ export const projectsData = [
     liveLink: "https://curious-bunny-3bacff.netlify.app/", // Replace with actual link
   },
   {
-    title: "HostelHub",
+    title: "GAN-EchoViewTransform",
     description:
-      "Hostel room allocation system optimizing assignments with user preferences, featuring secure authentication and efficient data management.",
-    tags: ["React", "MongoDB", "Tailwind", "Node.js", "Figma"],
-    imageUrl: hostel2,
-    githubLink: "https://github.com/AyushmanSoni/HostelHub-Frontend", // Replace with actual link
+      "A deep learning project to generate A4C echocardiographic images from A2C views using Pix2Pix GAN with U-Net and PatchGAN.",
+    tags: ["GenAI", "GAN", "Pix2Pix"],
+    imageUrl: gan,
+    githubLink: "https://github.com/AyushmanSoni/GAN-EchoViewTransform", // Replace with actual link
     liveLink: "", // Replace with actual link
   },
   {
@@ -92,6 +93,15 @@ export const projectsData = [
     imageUrl: chapterverse2,
     githubLink: "https://github.com/AyushmanSoni/Chapterverse", // Replace with actual link
     liveLink: "https://joyful-pony-a97d9a.netlify.app/", // Replace with actual link
+  },
+  {
+    title: "HostelHub",
+    description:
+      "Hostel room allocation system optimizing assignments with user preferences, featuring secure authentication and efficient data management.",
+    tags: ["React", "MongoDB", "Tailwind", "Node.js", "Figma"],
+    imageUrl: hostel2,
+    githubLink: "https://github.com/AyushmanSoni/HostelHub-Frontend", // Replace with actual link
+    liveLink: "", // Replace with actual link
   },
 ] as const;
 
