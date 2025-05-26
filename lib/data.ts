@@ -11,6 +11,8 @@ import hostel from "@/public/hostel.jpeg"
 import hostel2 from "@/public/hostelhub.jpeg"
 import syncsoc from "@/public/main.png"
 import gan from "@/public/gan.png"
+import ns from "@/public/ns.webp"
+import converto from "@/public/converrto.png"
 export const links = [
   {
     name: "Home",
@@ -103,6 +105,27 @@ export const projectsData = [
     githubLink: "https://github.com/AyushmanSoni/HostelHub-Frontend", // Replace with actual link
     liveLink: "", // Replace with actual link
   },
+   {
+    title: "Converrto Website UI/UX Project",
+    description:
+      "Responsive SaaS platform with dashboards, subscriptions, app previews, onboarding, and user-centric design.",
+    tags: ["UI/UX", "Wireframing", "Figma", "Design", "Typography"],
+    imageUrl: converto,
+    githubLink: "",
+    figmaLink: "https://www.figma.com/design/gZR4ltwrMpfRuHrFJrZMVu/Work?node-id=1-6462&t=5H57YdmjeIiy6RaI-0", // Replace with your actual Figma URL
+    liveLink: "",
+  },
+  {
+    title: "NoteShorts App UI/UX Project",
+    description:
+      "Designed intuitive mobile app with note management, personalized explore, onboarding, and dark mode.",
+    tags: ["UI/UX", "Wireframing", "Figma", "Design"],
+    imageUrl: ns,
+    githubLink: "",
+    figmaLink: "https://www.figma.com/design/gZR4ltwrMpfRuHrFJrZMVu/Work?node-id=0-1&p=f&t=5H57YdmjeIiy6RaI-0", // Replace with your actual Figma URL
+    liveLink: "",
+  },
+  
 ] as const;
 
 

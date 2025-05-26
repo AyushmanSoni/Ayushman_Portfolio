@@ -4,10 +4,12 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaGithub} from "react-icons/fa";
-import { FaLink } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa6";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & {
+  figmaLink?: string;
+};
 
 export default function Project({
   title,
@@ -16,6 +18,7 @@ export default function Project({
   imageUrl,
   githubLink,
   liveLink,
+  figmaLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -41,28 +44,41 @@ export default function Project({
             {description}
           </p>
 
-          {/* Icons for GitHub and Live Link */}
-          
+          {/* Conditional icons: Show only Figma icon if figmaLink exists */}
           <div className="flex gap-4 mt-2 mb-3">
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition"
-            >
-              <FaGithub size={22} />
-            </a>
-            {liveLink && (
+            {figmaLink ? (
               <a
-                href={liveLink}
+                href={figmaLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition"
               >
-                <FaLink size={22} />
+                <FaFigma size={24} />
               </a>
+            ) : (
+              <>
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition"
+                >
+                  <FaGithub size={22} />
+                </a>
+                {liveLink && (
+                  <a
+                    href={liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition"
+                  >
+                    <FaLink size={22} />
+                  </a>
+                )}
+              </>
             )}
           </div>
+
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -73,7 +89,6 @@ export default function Project({
               </li>
             ))}
           </ul>
-          
         </div>
 
         <Image
@@ -81,17 +96,17 @@ export default function Project({
           alt="Project I worked on"
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+            group-even:group-hover:translate-x-3
+            group-even:group-hover:translate-y-3
+            group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-40"
+            group-even:right-[initial] group-even:-left-40"
         />
       </section>
     </motion.div>
